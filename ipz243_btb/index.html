@@ -31,37 +31,121 @@
     <div class="news">
         <img src="images/switch2.jpg" alt="Switch 2">
         <h2>Nintendo Switch 2</h2>
+
         <p>Компанія Nintendo представила нову консоль Nintendo Switch 2.</p>
+
+        <div class="more-text">
+            <p>
+                Консоль отримала потужніше залізо, покращений дисплей та підтримку нових
+                ексклюзивних ігор. Nintendo також обіцяє кращу продуктивність у портативному режимі.
+            </p>
+        </div>
+
+        <button class="read-more-btn">Читати далі</button>
     </div>
 
     <div class="news">
         <img src="images/zelda.jpg" alt="Zelda">
         <h2>Нова Zelda</h2>
+
         <p>Фанати очікують нову гру серії The Legend of Zelda.</p>
+
+        <div class="more-text">
+            <p>
+                Розробники обіцяють нові механіки дослідження світу, покращену бойову систему
+                та ще більше можливостей для взаємодії з навколишнім середовищем.
+            </p>
+        </div>
+
+        <button class="read-more-btn">Читати далі</button>
     </div>
 
     <div class="news">
         <img src="images/mario.jpg" alt="Mario">
         <h2>Mario Kart</h2>
+
         <p>Mario Kart залишається однією з найпопулярніших серій Nintendo.</p>
+
+        <div class="more-text">
+            <p>
+                Гра отримує нові траси, персонажів та режими. Серія вже багато років
+                залишається однією з найуспішніших франшиз компанії Nintendo.
+            </p>
+        </div>
+
+        <button class="read-more-btn">Читати далі</button>
     </div>
+
     <div class="news">
         <img src="images/pokemon.jpg" alt="Pokemon">
         <h2>Новий Pokémon</h2>
-        <p>Компанія Nintendo анонсувала нову гру серії Pokémon з покращеною графікою та відкритим світом.</p>
+
+        <p>Компанія Nintendo анонсувала нову гру серії Pokémon.</p>
+
+        <div class="more-text">
+            <p>
+                На гравців чекає відкритий світ, нові покемони та покращена графіка.
+                Розробники обіцяють багато нових механік для дослідження регіону.
+            </p>
+        </div>
+
+        <button class="read-more-btn">Читати далі</button>
     </div>
 
     <div class="news">
         <img src="images/metroid.jpg" alt="Metroid">
         <h2>Metroid Prime 4 наближається</h2>
-        <p>Фанати серії Metroid очікують вихід нової частини пригод Самус Аран на Nintendo Switch.</p>
+
+        <p>Фанати серії Metroid очікують вихід нової частини пригод Самус Аран.</p>
+
+        <div class="more-text">
+            <p>
+                Nintendo вже показала кілька трейлерів гри. Очікується сучасна графіка,
+                атмосферні локації та дослідження космічних світів.
+            </p>
+        </div>
+
+        <button class="read-more-btn">Читати далі</button>
     </div>
 
     <div class="news">
         <img src="images/animalcrossing.jpg" alt="Animal Crossing">
         <h2>Animal Crossing залишається популярною</h2>
-        <p>Гравці продовжують створювати власні острови та ділитися ними зі спільнотою.</p>
+
+        <p>Гравці продовжують створювати власні острови.</p>
+
+        <div class="more-text">
+            <p>
+                Спільнота регулярно проводить творчі конкурси та ділиться дизайнами
+                будинків, островів і костюмів для персонажів.
+            </p>
+        </div>
+
+        <button class="read-more-btn">Читати далі</button>
     </div>
+
+    <script>
+        let buttons = document.querySelectorAll(".read-more-btn");
+
+        buttons.forEach(function (btn) {
+
+            btn.addEventListener("click", function () {
+
+                let card = btn.parentElement;
+
+                card.classList.toggle("active");
+
+                if (card.classList.contains("active")) {
+                    btn.textContent = "Згорнути";
+                }
+                else {
+                    btn.textContent = "Читати далі";
+                }
+
+            });
+
+        });
+    </script>
 
 </body>
 
