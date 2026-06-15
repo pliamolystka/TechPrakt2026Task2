@@ -1,12 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
+
+    background-color: rgb(150, 150, 150);
+    background-image: url("images/mario-bg.svg");
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: 100px;
+    background-attachment: fixed;
 }
 
 .title {
+    background-color: rgb(53, 53, 53);
+    border-radius: 40px;
+    padding: 20px;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -20,7 +29,7 @@ body {
 }
 h1 {
     text-align: center;
-    color: white;
+    color: red;
     margin-bottom: 30px;
 }
 
@@ -65,7 +74,7 @@ h1 {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #2a5298;
+    background: red;
     color: white;
     font-weight: bold;
     transition: 0.3s;
@@ -93,11 +102,11 @@ h1 {
 @keyframes hvyla {
     0%, 100% {
         transform: translateY(0);
-        color: white;
+        color: red;
     }
 
     50% {
         transform: translateY(-15px);
-        color: red;
+        color: white;
     }
 }
